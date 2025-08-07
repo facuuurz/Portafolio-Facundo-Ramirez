@@ -4,37 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="src/css/swiper.css">
     <title>Document</title>
 </head>
 <body class="font-poppins text-white">
     <header class="bg-[#0D0D0D] flex justify-center items-center h-20 w-full">
-        <div class="flex justify-between items-center w-full max-w-[1440px] px-4 bg-amber-400">
+        <div class="flex justify-between items-center w-full max-w-[1440px] px-8">
             <div>
-                <img src="src/img/icons8-spider-man-nuevo-64.png" alt="logo de la marca de facundo thomas ramirez">
+                <img src="src/img/header/icons8-spider-man-nuevo-64.png" alt="logo de la marca de facundo thomas ramirez">
             </div>
             <nav class="flex gap-5">
                 <a href="#">Home</a>
-                <a href="#">Project</a>
+                <a href="#">Projects</a>
+                <a href="#">Skills</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main class="px-4 bg-blue-300">
-        <section class="bg-blue-500 flex h-[calc(100vh-5rem)]">
-            <div class="w-[55%] flex items-center justify-center flex-col">
-                <h2 class="text-3xl">¡Hola! soy Facundo Ramirez</h2>
-                <h1 class="text-6xl text-center">Analista en Sistemas y Programador FullStack.</h1>
-                <button class="hover:cursor-pointer text-2xl p-2.5 bg-amber-400 rounded-full">Mi CV</button>
+    <main class="px-4 bg-[#0D0D0D]">
+        <section class=" flex h-[calc(100vh-5rem)]">
+            <div class="w-[55%] flex items-center justify-center flex-col gap-3">
+                <div class="flex flex-col items-center justify-centers gap-1.5">
+                    <h2 class="text-3xl">¡Hola! soy Facundo Ramirez</h2>
+                    <h1 class="text-6xl text-center">Analista en Sistemas y Programador FullStack.</h1>
+                </div>
+                <button class="hover:cursor-pointer text-2xl p-4 bg-[#D7F205] rounded-full text-[#0D0D0D]">Mi CV</button>
             </div>
 
             <div class="w-[45%] flex items-center justify-center">
-                <img src="src/img/Perfil.jpg" alt="" class="w-48 h-48 rounded-full object-cover">
+                <img src="src/img/hero/Perfil.jpg" alt="" class="w-80 h-80 rounded-full object-cover">
+            </div>
+        </section>
+
+        <section class="min-h-screen">
+            <!-- pendiente -->
+            <div class="h-36  bg-amber-400">
+                <h3 class="text-center text-2xl bg-black-50">PROJECTS</h3>
+            </div>
+            
+            <div class="swiper" style="background-color: #c72929;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-color: #D7F205;">Slide 1</div>
+                    <div class="swiper-slide" style="background-color: #D7F205;">Slide 2</div>
+                    <div class="swiper-slide" style="background-color: #D7F205;">Slide 3</div>
+                    <div class="swiper-slide" style="background-color: #D7F205;">Slide 4</div>
+                </div>
+
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/scripts/swiper.js"></script>
 </body>
 </html>
-
