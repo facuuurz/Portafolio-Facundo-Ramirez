@@ -18,20 +18,20 @@ const swiper = new Swiper('.swiper',{
         slideShadows: true,
       },
       // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    
-  },
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        
+      },
     });
