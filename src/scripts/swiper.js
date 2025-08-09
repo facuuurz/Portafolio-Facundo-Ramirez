@@ -1,37 +1,47 @@
 const swiper = new Swiper('.swiper',{ 
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
+    // Efecto visual del slider (coverflow: 3D con rotación)
+    effect: 'coverflow',
 
-      loop: true,
-      autoplay: {
-        delay: 3000, // tiempo entre slides en milisegundos (3 segundos)
-        disableOnInteraction: false, // sigue autoplay después de que el usuario interactúa
-        pauseOnMouseEnter: true, // pausa si el mouse está encima (opcional)
+    // Si está en true, el cursor se ve como una mano para arrastrar (lo dejamos en false porque no queremos arrastre)
+    grabCursor: false,
+
+    // Centra el slide activo en el medio del contenedor
+    centeredSlides: true,
+
+    // Define cuántos slides se ven al mismo tiempo (auto = ajusta al ancho del contenido)
+    slidesPerView: 'auto',
+
+    // Repite los slides de manera infinita
+    loop: true,
+
+    // Configuración de autoplay (pase automático de slides)
+    autoplay: {
+        delay: 3000, // Tiempo entre slides en milisegundos (3s)
+        disableOnInteraction: false, // No detiene el autoplay al interactuar
+        pauseOnMouseEnter: true, // Pausa el autoplay cuando el mouse pasa por encima
     },
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
 
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+    // Configuración específica del efecto coverflow
+    coverflowEffect: {
+        rotate: 50,     // Ángulo de rotación de los slides
+        stretch: 0,     // Separación entre slides (px)
+        depth: 100,     // Profundidad 3D
+        modifier: 1,    // Intensidad del efecto
+        slideShadows: true, // Muestra sombras en los lados de los slides
+    },
 
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-        
-      },
-    });
+    // Bloquea el arrastre con mouse o táctil, solo flechas y autoplay funcionan
+    allowTouchMove: false, 
+
+    // Paginación (puntitos debajo del slider)
+    pagination: {
+        el: '.swiper-pagination', // Elemento HTML donde aparecen los bullets
+        clickable: true, // Permite hacer click en los bullets para cambiar de slide
+    },
+
+    // Flechas de navegación
+    navigation: {
+        nextEl: '.swiper-button-next', // Selector de la flecha derecha
+        prevEl: '.swiper-button-prev', // Selector de la flecha izquierda
+    },
+});

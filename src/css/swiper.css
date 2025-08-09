@@ -34,16 +34,37 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    border-radius: 100%;
-    padding: 40px;
-    color: #0D0D0D;
-    background-color: #f5f5f5;
+    width: 4rem;
+    height: 4rem;
+}
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none; /* Elimina la flecha default */
 }
 
 .overlay-gradient {
 background: linear-gradient(10deg, rgba(0, 0, 0, 0.78) 17%, rgba(255, 255, 255, 0) 45%);
 }
 
+.swiper::before,
+.swiper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80px; /* ancho del degradado */
+    height: 100%;
+    z-index: 5; /* por encima de las imágenes */
+    pointer-events: none; /* no bloquea clics */
+}
+
+.swiper::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(13, 13, 13, 1), rgba(13, 13, 13, 0));
+}
+
+.swiper::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(13, 13, 13, 1), rgba(13, 13, 13, 0));
+}
