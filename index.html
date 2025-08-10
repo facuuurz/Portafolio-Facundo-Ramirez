@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,45 +15,52 @@
                 <img src="src/img/header/icono-spider-man.webp" alt="logo de la marca de facundo thomas ramirez">
             </div>
             <nav class="flex gap-5">
-                <a href="#">Home</a>
-                <a href="#">Projects</a>
-                <a href="#">Skills</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#home" class="nav-btn">Home</a>
+                <a href="#projects" class="nav-btn">Projects</a>
+                <a href="#" class="nav-btn">Skills</a>
+                <a href="#" class="nav-btn">About</a>
             </nav>
         </div>
     </header>
 
-    <main class="px-4 bg-[#0D0D0D]">
+    <main class="px-4 bg-[#0D0D0D]" id="home">
         <section class=" flex h-[calc(100vh-5rem)]">
             <div class="w-[55%] flex items-center justify-center flex-col gap-3">
-                <div class="flex flex-col items-center justify-centers gap-1.5">
-                    <h2 class="text-3xl">¡Hola! soy Facundo Ramirez</h2>
-                    <h1 class="text-6xl text-center">Analista en Sistemas y Programador FullStack.</h1>
-                </div>
-                <button class="hover:cursor-pointer text-2xl p-4 rounded-full text-white 
-                        bg-[linear-gradient(135deg,#000000_0%,#6a11cb_10%,#ff00a6_50%,#ff6a00_100%)] 
-                        [background-size:200%_auto] 
-                        transition-all duration-500 ease-in-out 
-                        hover:[background-position:right_center] 
-                        transform hover:scale-105 active:scale-95">
-                Mi CV
-                </button>
+                <div class="flex flex-col items-center text-center gap-2">
+                <h2 class="text-3xl font-semibold  animate-fadeInUp">
+                    ¡Hola! soy Facundo Ramirez
+                </h2>
+
+                <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight animate-fadeInUp [animation-delay:200ms]">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400">
+                        Analista en Sistemas
+                    </span> <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500">
+                        Programador FullStack
+                    </span>
+                </h1>
+            </div>
+            <button class="hover:cursor-pointer text-2xl p-4 rounded-full bg-white transition-all duration-500 ease-in-out transform hover:scale-105 active:scale-95">
+                <span class="text-transparent bg-[linear-gradient(135deg,#000000_0%,#6a11cb_10%,#ff00a6_50%,#ff6a00_100%)] bg-clip-text [background-size:200%_auto] 
+                [background-position:left_center] hover:[background-position:right_center] 
+                transition-all duration-500 ease-in-out font-medium">Mi CV
+                </span>
+            </button>
+
             </div>
 
             <div class="w-[45%] flex items-center justify-center">
-                <img src="src/img/hero/Perfil.webp" alt="" class="w-80 h-80 rounded-full object-cover">
+                <div class="p-2 rounded-full animate-border-gradient bg-[length:200%_200%] bg-[linear-gradient(135deg,#000000_0%,#6a11cb_10%,#ff00a6_50%,#ff6a00_100%)]">
+                    <img src="src/img/hero/Perfil.webp" alt="" class="w-80 h-80 rounded-full object-cover border-8 border-transparent bg-white bg-clip-padding" />
+                </div>
             </div>
         </section>
 
-        <section class="min-h-screen">
-            <!-- pendiente -->
+        <section class="min-h-screen" id="projects">
             <div class="h-20 flex items-end justify-center">
-                <h3 class="text-6xl font-extrabold text-transparent bg-clip-text 
-bg-[linear-gradient(90deg,#ff6a00,#ff00a6,#6a11cb,#000000)] 
-[background-size:300%]">
-    PROJECTS
-</h3>
+                <h3 class="text-6xl font-extrabold text-transparent bg-clip-text bg-[linear-gradient(90deg,#ff6a00,#ff00a6,#6a11cb,#000000)] [background-size:300%]">
+                PROJECTS
+                </h3>
             </div>
             
             <div class="swiper">
@@ -66,9 +73,9 @@ bg-[linear-gradient(90deg,#ff6a00,#ff00a6,#6a11cb,#000000)]
                             <a href="https://github.com/facuuurz/Menu-Digital" target="_blank" class="inline-block w-[150px] p-5 text-center rounded-full text-white font-medium bg-[linear-gradient(135deg,#000000_0%,#6a11cb_1%,#ff00a6_50%,#ff6a00_100%)] [background-size:200%_auto] transition-all duration-500 ease-in-out hover:[background-position:right_center] transform hover:scale-105 active:scale-95">Ver</a>
                         </div>
                     </div>
-                    <div class="swiper-slide relative bg-white"><img src="#" alt="Imagen de proyecto de carta de presentacion" class="object-cover w-full h-full rounded-[10px]">
-                        <img src="#" alt="Imagen de proyecto de carta de presentacion" class="object-cover w-full h-full rounded-[10px]">
-                        <div class="absolute inset-0 rounded-[10px] bg-[linear-gradient(10deg,rgba(0,0,0,0.78)_17%,rgba(255,255,255,0)_45%)] flex flex-col items-start justify-end p-5 gap-2.5">
+                    <div class="swiper-slide relative">
+                        <img src="src\img\projects\ilustracion-juego-peaper-please.webp" alt="Imagen de proyecto de carta de presentacion" class="object-cover w-full h-full rounded-[10px]">
+                        <div class="absolute inset-0 rounded-[10px] bg-[linear-gradient(10deg,rgba(0,0,0,0.78)_25%,rgba(255,255,255,0)_60%)] flex flex-col items-start justify-end p-5 gap-2.5">
                             <h3>PAPER, PLEASE </h3>
                             <p>Teconologias: QT | C++ | CSS</p>
                             <a href="https://github.com/facuuurz/Paper-Please" target="_blank" class="inline-block w-[150px] p-5 text-center rounded-full text-white font-medium bg-[linear-gradient(135deg,#000000_0%,#6a11cb_1%,#ff00a6_50%,#ff6a00_100%)] [background-size:200%_auto] transition-all duration-500 ease-in-out hover:[background-position:right_center] transform hover:scale-105 active:scale-95">Ver</a>
