@@ -17,8 +17,8 @@
             <nav class="flex gap-5">
                 <a href="#home" class="nav-btn">Home</a>
                 <a href="#projects" class="nav-btn">Projects</a>
-                <a href="#" class="nav-btn">Skills</a>
-                <a href="#" class="nav-btn">About</a>
+                <a href="#skills" class="nav-btn">Skills</a>
+                <a href="#about" class="nav-btn">About</a>
             </nav>
         </div>
     </header>
@@ -119,10 +119,59 @@
                         transform hover:scale-105 active:scale-95">
                 <img src="src/img/projects/flecha-derecha.webp" alt="Flecha siguiente proyecto" class="w-24 h-24 object-contain">
             </div>
+        </section>
 
+                <!-- Skills -->
+        <section class="min-h-screen flex flex-col items-center justify-center gap-10" id="skills">
+            <h3 class="text-6xl font-extrabold text-transparent bg-clip-text bg-[linear-gradient(90deg,#ff6a00,#ff00a6,#6a11cb,#000000)] [background-size:300%]">
+                SKILLS
+            </h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 max-w-[1000px] w-full px-4">
+                <div class="flex flex-col items-center gap-2">
+                    <img src="src/img/skills/html.webp" alt="HTML" class="w-20 h-20 object-contain">
+                    <p class="text-lg font-medium">HTML</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="src/img/skills/css.webp" alt="CSS" class="w-20 h-20 object-contain">
+                    <p class="text-lg font-medium">CSS</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="src/img/skills/js.webp" alt="JavaScript" class="w-20 h-20 object-contain">
+                    <p class="text-lg font-medium">JavaScript</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="src/img/skills/cpp.webp" alt="C++" class="w-20 h-20 object-contain">
+                    <p class="text-lg font-medium">C++</p>
+                </div>
+                <!-- Agrega más skills si quieres -->
             </div>
         </section>
+
+        <!-- About Me -->
+        <section class="min-h-screen flex flex-col items-center justify-center text-center gap-8 px-4" id="about">
+            <h3 class="text-6xl font-extrabold text-transparent bg-clip-text bg-[linear-gradient(90deg,#ff6a00,#ff00a6,#6a11cb,#000000)] [background-size:300%]">
+                ABOUT ME
+            </h3>
+            <div class="max-w-[800px] text-lg leading-relaxed">
+    <p>
+        Soy estudiante de la <span class="font-semibold text-pink-500">Licenciatura en Análisis de Sistemas</span> y actualmente curso mi tercer año de la carrera. 
+        Disfruto programar y diseñar soluciones eficientes que optimicen procesos y resuelvan problemas reales. 
+        Me apasiona el mundo del desarrollo <span class="font-semibold text-orange-400">FullStack</span>, combinando la lógica del backend con la creatividad del frontend para construir experiencias completas.
+    </p>
+    <p class="mt-4">
+        Creo firmemente que cada línea de código es una oportunidad para mejorar el mundo digital, y mi objetivo es dejar huella creando software que inspire, funcione y perdure.
+    </p>
+</div>
+
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0D0D0D] py-6 border-t border-gray-700 text-center">
+        <p class="text-sm text-gray-400">
+            © 2025 Facundo Ramirez. Todos los derechos reservados.
+        </p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="src/scripts/swiper.js"></script>
