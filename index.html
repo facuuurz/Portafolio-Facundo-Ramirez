@@ -37,37 +37,43 @@
 
 
     <main class="px-4 bg-[#0D0D0D]" id="home">
-        <section class=" flex h-[calc(100vh-5rem)]">
-            <div class="w-[55%] flex items-center justify-center flex-col gap-3">
+        <section class=" flex h-[calc(100vh-5rem)] sm:flex-col-reverse md:flex-col-reverse lg:flex-row 
+        
+        max-sm:flex-col-reverse max-sm:items-center max-sm:justify-center max-sm:gap-3">
+            <div class="w-[55%] flex items-center justify-center flex-col gap-3 max-sm:w-[100%]">
                 <div class="flex flex-col items-center text-center gap-2">
-                <h2 class="text-3xl font-semibold  animate-fadeInUp">
-                    ¡Hola! soy Facundo Ramirez
-                </h2>
+                    <h2 class="text-3xl font-semibold  animate-fadeInUp max-sm:text-xl">
+                        ¡Hola! soy Facundo Ramirez.
+                    </h2>
 
-                <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight animate-fadeInUp [animation-delay:200ms]">
-                    <span class="text-transparent bg-clip-text bg-[linear-gradient(135deg,#000000_0%,#6a11cb_1%,#ff00a6_30%,#ff6a00_100%)]">
-                        Analista en Sistemas y
-                    </span> <br>
-                    <span class="text-transparent bg-clip-text bg-[linear-gradient(315deg,#000000_0%,#6a11cb_1%,#ff00a6_30%,#ff6a00_100%)]">
-                        Programador FullStack
+                    <h1 class="text-6xl font-extrabold leading-tight animate-fadeInUp [animation-delay:200ms] 
+                    max-sm:text-2xl">
+                        <span class="text-transparent bg-clip-text bg-[linear-gradient(135deg,#000000_0%,#6a11cb_1%,#ff00a6_30%,#ff6a00_100%)]">
+                            Analista en Sistemas y
+                        </span> <br>
+                        <span class="text-transparent bg-clip-text bg-[linear-gradient(315deg,#000000_0%,#6a11cb_1%,#ff00a6_30%,#ff6a00_100%)]">
+                            Programador FullStack
+                        </span>
+                    </h1>
+                </div>
+                <a href="src/docs/CV Facundo Thomas Ramirez.pdf" download="CV Facundo Thomas Ramirez.pdf" class="hover:cursor-pointer text-2xl p-4 rounded-full bg-white transition-all duration-500 ease-in-out transform hover:scale-105 active:scale-95">
+                    <span class="text-transparent bg-[linear-gradient(135deg,#000000_0%,#6a11cb_10%,#ff00a6_50%,#ff6a00_100%)] bg-clip-text [background-size:200%_auto] 
+                    [background-position:left_center] hover:[background-position:right_center] 
+                    transition-all duration-500 ease-in-out font-medium">Mi CV
                     </span>
-                </h1>
-            </div>
-            <a href="src/docs/CV Facundo Thomas Ramirez.pdf" download="CV Facundo Thomas Ramirez.pdf" class="hover:cursor-pointer text-2xl p-4 rounded-full bg-white transition-all duration-500 ease-in-out transform hover:scale-105 active:scale-95">
-                <span class="text-transparent bg-[linear-gradient(135deg,#000000_0%,#6a11cb_10%,#ff00a6_50%,#ff6a00_100%)] bg-clip-text [background-size:200%_auto] 
-                [background-position:left_center] hover:[background-position:right_center] 
-                transition-all duration-500 ease-in-out font-medium">Mi CV
-                </span>
-            </a>
-
+                </a>
             </div>
 
-            <div class="w-[45%] flex items-center justify-center">
+            <div class="w-[45%] flex items-center justify-center max-sm:w-[100%]">
                 <div class="p-2 rounded-full animate-border-gradient bg-[length:200%_200%] bg-[linear-gradient(135deg,#000000_0%,#6a11cb_10%,#ff00a6_50%,#ff6a00_100%)]">
-                    <img src="src/img/hero/Perfil.webp" alt="" class="w-80 h-80 rounded-full object-cover border-8 border-transparent bg-white bg-clip-padding" />
+                    <img src="src/img/hero/Perfil.webp" alt="" class="w-80 h-80 rounded-full object-cover border-8 border-transparent bg-white bg-clip-padding
+                    
+                    max-sm:w-56 max-sm:h-56 max-sm:border-2 " />
                 </div>
             </div>
         </section>
+
+
 
         <section class="min-h-screen" id="projects">
             <div class="h-20 flex items-end justify-center">
@@ -132,6 +138,7 @@
                         transform hover:scale-105 active:scale-95">
                 <img src="src/img/projects/flecha-derecha.webp" alt="Flecha siguiente proyecto" class="w-24 h-24 object-contain">
             </div>
+
         </section>
 
         <section class="min-h-screen flex flex-col items-center justify-center gap-10" id="stack">
