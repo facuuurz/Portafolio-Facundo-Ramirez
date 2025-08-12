@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="src/img/header/fork-icon.webp">
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="src/css/swiper.css">
-    <title>Document</title>
+    <title>Portafolio F.R</title>
 </head>
 <body class="font-poppins text-white">
     <header class="bg-[#0D0D0D] flex justify-center items-center h-20 w-full">
         <div class="flex justify-between items-center w-full max-w-[1440px] px-8">
             <div>
-                <img src="src/img/header/icono-spider-man.webp" alt="logo de la marca de facundo thomas ramirez">
+                <img src="src/img/header/fork-icon.webp" alt="logo de la marca de facundo thomas ramirez" class="object-contain h-14 w-14s">
             </div>
             <nav class="flex gap-5">
                 <a href="#home" class="nav-btn">Home</a>
                 <a href="#projects" class="nav-btn">Projects</a>
-                <a href="#skills" class="nav-btn">Skills</a>
+                <a href="#stack" class="nav-btn">Stack</a>
                 <a href="#about" class="nav-btn">About</a>
             </nav>
         </div>
@@ -32,20 +33,20 @@
                 </h2>
 
                 <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight animate-fadeInUp [animation-delay:200ms]">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400">
+                    <span class="text-transparent bg-clip-text bg-[linear-gradient(135deg,#000000_0%,#6a11cb_1%,#ff00a6_30%,#ff6a00_100%)]">
                         Analista en Sistemas
                     </span> <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500">
+                    <span class="text-transparent bg-clip-text bg-[linear-gradient(315deg,#000000_0%,#6a11cb_1%,#ff00a6_30%,#ff6a00_100%)]">
                         Programador FullStack
                     </span>
                 </h1>
             </div>
-            <button class="hover:cursor-pointer text-2xl p-4 rounded-full bg-white transition-all duration-500 ease-in-out transform hover:scale-105 active:scale-95">
+            <a href="src/docs/CV Facundo Thomas Ramirez.pdf" download="CV Facundo Thomas Ramirez.pdf" class="hover:cursor-pointer text-2xl p-4 rounded-full bg-white transition-all duration-500 ease-in-out transform hover:scale-105 active:scale-95">
                 <span class="text-transparent bg-[linear-gradient(135deg,#000000_0%,#6a11cb_10%,#ff00a6_50%,#ff6a00_100%)] bg-clip-text [background-size:200%_auto] 
                 [background-position:left_center] hover:[background-position:right_center] 
                 transition-all duration-500 ease-in-out font-medium">Mi CV
                 </span>
-            </button>
+            </a>
 
             </div>
 
@@ -122,26 +123,46 @@
         </section>
 
                 <!-- Skills -->
-        <section class="min-h-screen flex flex-col items-center justify-center gap-10" id="skills">
+        <section class="min-h-screen flex flex-col items-center justify-center gap-10" id="stack">
             <h3 class="text-6xl font-extrabold text-transparent bg-clip-text bg-[linear-gradient(90deg,#ff6a00,#ff00a6,#6a11cb,#000000)] [background-size:300%]">
-                SKILLS
+                STACK
             </h3>
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 max-w-[1000px] w-full px-4">
-                <div class="flex flex-col items-center gap-2">
-                    <img src="src/img/skills/html.webp" alt="HTML" class="w-20 h-20 object-contain">
+                <div class="flex flex-col items-center gap-2 bg-[#262626] py-4 rounded-2xl">
+                    <img src="src/img/stack/HTML5.webp" alt="HTML" class="w-20 h-20 object-contain">
                     <p class="text-lg font-medium">HTML</p>
                 </div>
-                <div class="flex flex-col items-center gap-2">
-                    <img src="src/img/skills/css.webp" alt="CSS" class="w-20 h-20 object-contain">
+                <div class="flex flex-col items-center gap-2 bg-[#262626] py-4 rounded-2xl">
+                    <img src="src/img/stack/CSS3.webp" alt="CSS" class="w-20 h-20 object-contain">
                     <p class="text-lg font-medium">CSS</p>
                 </div>
-                <div class="flex flex-col items-center gap-2">
-                    <img src="src/img/skills/js.webp" alt="JavaScript" class="w-20 h-20 object-contain">
+                <div class="flex flex-col items-center gap-2 bg-[#262626] py-4 rounded-2xl">
+                    <img src="src/img/stack/JavaScript.webp" alt="JavaScript" class="w-20 h-20 object-contain">
                     <p class="text-lg font-medium">JavaScript</p>
                 </div>
-                <div class="flex flex-col items-center gap-2">
-                    <img src="src/img/skills/cpp.webp" alt="C++" class="w-20 h-20 object-contain">
+                <div class="flex flex-col items-center gap-2 bg-[#262626] py-4 rounded-2xl">
+                    <img src="src/img/stack/C-_CPlusPlus_.webp" alt="C++" class="w-20 h-20 object-contain">
                     <p class="text-lg font-medium">C++</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 bg-[#262626] py-4 rounded-2xl">
+                    <img src="src/img/stack/Tailwind-CSS.webp" alt="Tailwind CSS" class="w-20 h-20 object-contain">
+                    <p class="text-lg font-medium">Tailwind CSS</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 bg-[#262626] py-4 rounded-2xl">
+                    <img src="src/img/stack/Qt Framework.webp" alt="QT" class="w-20 h-20 object-contain">
+                    <p class="text-lg font-medium">QT</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 bg-[#262626] py-4 rounded-2xl">
+                    <img src="src/img/stack/PHP.webp" alt="Php" class="w-20 h-20 object-contain">
+                    <p class="text-lg font-medium">Php</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 bg-[#262626] py-4 rounded-2xl">
+                    <img src="src/img/stack/Git.webp" alt="git" class="w-20 h-20 object-contain">
+                    <p class="text-lg font-medium">Git</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 bg-[#262626] py-4 rounded-2xl">
+                    <img src="src/img/stack/GitHub.webp" alt="github" class="w-20 h-20 object-contain">
+                    <p class="text-lg font-medium">Github</p>
                 </div>
                 <!-- Agrega más skills si quieres -->
             </div>
@@ -153,16 +174,35 @@
                 ABOUT ME
             </h3>
             <div class="max-w-[800px] text-lg leading-relaxed">
-    <p>
-        Soy estudiante de la <span class="font-semibold text-pink-500">Licenciatura en Análisis de Sistemas</span> y actualmente curso mi tercer año de la carrera. 
-        Disfruto programar y diseñar soluciones eficientes que optimicen procesos y resuelvan problemas reales. 
-        Me apasiona el mundo del desarrollo <span class="font-semibold text-orange-400">FullStack</span>, combinando la lógica del backend con la creatividad del frontend para construir experiencias completas.
-    </p>
-    <p class="mt-4">
-        Creo firmemente que cada línea de código es una oportunidad para mejorar el mundo digital, y mi objetivo es dejar huella creando software que inspire, funcione y perdure.
-    </p>
-</div>
+                <p>
+                    Soy estudiante de la <span class="font-semibold text-pink-500">Licenciatura en Análisis de Sistemas</span> y actualmente curso mi tercer año de la carrera. 
+                    Disfruto programar y diseñar soluciones eficientes que optimicen procesos y resuelvan problemas reales. 
+                    Me apasiona el mundo del desarrollo <span class="font-semibold text-orange-400">FullStack</span>, combinando la lógica del backend con la creatividad del frontend para construir experiencias completas.
+                </p>
+                <p class="mt-4">
+                    Creo firmemente que cada línea de código es una oportunidad para mejorar el mundo digital, y mi objetivo es dejar huella creando software que inspire, funcione y perdure.
+                </p>
 
+                <div class="mt-8 flex flex-col items-center gap-4">
+                    <h4 class="text-2xl font-semibold text-transparent bg-clip-text bg-[linear-gradient(90deg,#ff6a00,#ff00a6,#6a11cb)]">
+                        Conectemos
+                    </h4>
+                    <div class="flex gap-6">
+                        <a href="https://www.linkedin.com/in/facundotmsramirez" target="_blank" class="hover:scale-110 transition-transform">
+                            <img src="src/img/about/icon-linkedin.webp" alt="LinkedIn" class="w-10 h-10">
+                        </a>
+                        <a href="https://github.com/facuuurz" target="_blank" class="hover:scale-110 transition-transform">
+                            <img src="src/img/about/icon-github.webp" alt="GitHub" class="w-10 h-10">
+                        </a>
+                        <a href="https://instagram.com/facuurz" target="_blank" class="hover:scale-110 transition-transform">
+                            <img src="src/img/about/icon-instagram.webp" alt="Instagram" class="w-10 h-10">
+                        </a>
+                        <a href="mailto:facundorz2003@gmail.com" class="hover:scale-110 transition-transform">
+                            <img src="src/img/about/icon-gmail.webp" alt="Gmail" class="w-10 h-10">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
