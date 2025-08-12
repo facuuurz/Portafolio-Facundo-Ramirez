@@ -10,12 +10,23 @@
     <title>Portafolio F.R</title>
 </head>
 <body class="font-poppins text-white">
-    <header class="bg-[#0D0D0D] flex justify-center items-center h-20 w-full">
+    <header class="bg-[#0D0D0D] flex justify-center items-center h-20 w-full relative z-50 sticky top-0">
         <div class="flex justify-between items-center w-full max-w-[1440px] px-8">
+            <!-- Logo -->
             <div>
-                <img src="src/img/header/fork-icon.webp" alt="logo de la marca de facundo thomas ramirez" class="object-contain h-14 w-14s">
+                <img src="src/img/header/fork-icon.webp" alt="logo de la marca de facundo thomas ramirez" class="object-contain h-14 w-14">
             </div>
-            <nav class="flex gap-5">
+
+            <!-- Botón hamburguesa (solo móvil) -->
+            <button id="menu-btn" class="md:hidden flex flex-col gap-1">
+                <span class="block w-6 h-0.5 bg-white"></span>
+                <span class="block w-6 h-0.5 bg-white"></span>
+                <span class="block w-6 h-0.5 bg-white"></span>
+            </button>
+
+            <!-- Navbar -->
+            <nav id="menu" class="hidden md:flex gap-5 absolute md:static top-20 left-0 w-full md:w-auto bg-[#0D0D0D] md:bg-transparent items-center p-4 md:p-0 z-50
+            transition-all duration-300 ease-in-out opacity-0 md:opacity-100 transform -translate-y-5 md:translate-y-0">
                 <a href="#home" class="nav-btn">Home</a>
                 <a href="#projects" class="nav-btn">Projects</a>
                 <a href="#stack" class="nav-btn">Stack</a>
@@ -23,6 +34,7 @@
             </nav>
         </div>
     </header>
+
 
     <main class="px-4 bg-[#0D0D0D]" id="home">
         <section class=" flex h-[calc(100vh-5rem)]">
@@ -34,7 +46,7 @@
 
                 <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight animate-fadeInUp [animation-delay:200ms]">
                     <span class="text-transparent bg-clip-text bg-[linear-gradient(135deg,#000000_0%,#6a11cb_1%,#ff00a6_30%,#ff6a00_100%)]">
-                        Analista en Sistemas
+                        Analista en Sistemas y
                     </span> <br>
                     <span class="text-transparent bg-clip-text bg-[linear-gradient(315deg,#000000_0%,#6a11cb_1%,#ff00a6_30%,#ff6a00_100%)]">
                         Programador FullStack
@@ -122,7 +134,6 @@
             </div>
         </section>
 
-                <!-- Skills -->
         <section class="min-h-screen flex flex-col items-center justify-center gap-10" id="stack">
             <h3 class="text-6xl font-extrabold text-transparent bg-clip-text bg-[linear-gradient(90deg,#ff6a00,#ff00a6,#6a11cb,#000000)] [background-size:300%]">
                 STACK
@@ -164,11 +175,9 @@
                     <img src="src/img/stack/GitHub.webp" alt="github" class="w-20 h-20 object-contain">
                     <p class="text-lg font-medium">Github</p>
                 </div>
-                <!-- Agrega más skills si quieres -->
             </div>
         </section>
 
-        <!-- About Me -->
         <section class="min-h-screen flex flex-col items-center justify-center text-center gap-8 px-4" id="about">
             <h3 class="text-6xl font-extrabold text-transparent bg-clip-text bg-[linear-gradient(90deg,#ff6a00,#ff00a6,#6a11cb,#000000)] [background-size:300%]">
                 ABOUT ME
@@ -188,7 +197,7 @@
                         Conectemos
                     </h4>
                     <div class="flex gap-6">
-                        <a href="https://www.linkedin.com/in/facundotmsramirez" target="_blank" class="hover:scale-110 transition-transform">
+                        <a href="https://www.linkedin.com/in/" target="_blank" class="hover:scale-110 transition-transform">
                             <img src="src/img/about/icon-linkedin.webp" alt="LinkedIn" class="w-10 h-10">
                         </a>
                         <a href="https://github.com/facuuurz" target="_blank" class="hover:scale-110 transition-transform">
@@ -206,13 +215,13 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-[#0D0D0D] py-6 border-t border-gray-700 text-center">
         <p class="text-sm text-gray-400">
             © 2025 Facundo Ramirez. Todos los derechos reservados.
         </p>
     </footer>
 
+    <script src="src/scripts/menu-haburguesa.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="src/scripts/swiper.js"></script>
 </body>
