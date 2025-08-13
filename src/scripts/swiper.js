@@ -44,12 +44,12 @@ const swiper = new Swiper('.swiper',{
 
         // Configuración según el tamaño de pantalla
     breakpoints: {
-        // 📱 Móviles
+        //Móviles
         0: {
             allowTouchMove: true,
             autoplay: false, // sin auto-slide
         },
-        // 💻 Desktop
+        //Desktop
         641: {
             allowTouchMove: false,
             autoplay: {

@@ -4,7 +4,7 @@ const menuBtn = document.getElementById('menu-btn');
 
     function openMenu() {
         menu.classList.remove('hidden');
-        void menu.offsetWidth; // fuerza reflujo para animación
+        void menu.offsetWidth;
         menu.classList.add(
             'flex', 'flex-col', 'fixed', 'top-0', 'left-0',
             'w-full', 'h-screen', 'bg-[#0D0D0D]', 'z-50',

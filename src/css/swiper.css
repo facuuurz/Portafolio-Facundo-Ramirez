@@ -29,10 +29,10 @@
     opacity: 1;
 }
 
-/* Bullet activo */
+
 .swiper-pagination-bullet-active {
-  background: linear-gradient(135deg, #000000 0%,#6a11cb 1%,#ff00a6 50%,#ff6a00 100%); /* color que "resalta" */
-  transform: scale(2); /* opcional: lo agranda */
+    background: linear-gradient(135deg, #000000 0%,#6a11cb 1%,#ff00a6 50%,#ff6a00 100%); 
+    transform: scale(2); 
     border: 1px solid white;
 }
 
@@ -45,7 +45,7 @@
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    content: none; /* Elimina la flecha default */
+    content: none; 
 }
 
 .overlay-gradient {
@@ -57,10 +57,10 @@ background: linear-gradient(10deg, rgba(0, 0, 0, 0.78) 17%, rgba(255, 255, 255, 
     content: "";
     position: absolute;
     top: 0;
-    width: 80px; /* ancho del degradado */
+    width: 80px; 
     height: 100%;
-    z-index: 5; /* por encima de las imágenes */
-    pointer-events: none; /* no bloquea clics */
+    z-index: 5; 
+    pointer-events: none; 
 }
 
 .swiper::before {
@@ -80,14 +80,15 @@ background: linear-gradient(10deg, rgba(0, 0, 0, 0.78) 17%, rgba(255, 255, 255, 
     }
 
     .swiper-wrapper{
-        width: 20rem;
+        width: 22rem;
         height: 30rem;
+        
     }
 
     .swiper-slide{
         width: 100%;
         height: 100%;
-        background-color: #262626 ;
+        background-color:  #404040 ;
     }
 
     .swiper-button-next,
@@ -97,5 +98,18 @@ background: linear-gradient(10deg, rgba(0, 0, 0, 0.78) 17%, rgba(255, 255, 255, 
 
     .swiper-pagination{
         display: block;
+    }
+
+    .swiper::before,
+    .swiper::after {
+    content: none !important;
+    background: none !important;
+    display: none !important;
+    }
+
+    .swiper-slide {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
     }
 }
