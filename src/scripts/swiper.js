@@ -30,9 +30,6 @@ const swiper = new Swiper('.swiper',{
         slideShadows: true, // Muestra sombras en los lados de los slides
     },
 
-    // Bloquea el arrastre con mouse o táctil, solo flechas y autoplay funcionan
-    allowTouchMove: false, 
-
     // Paginación (puntitos debajo del slider)
     pagination: {
         el: '.swiper-pagination', // Elemento HTML donde aparecen los bullets
@@ -44,4 +41,23 @@ const swiper = new Swiper('.swiper',{
         nextEl: '.swiper-button-next', // Selector de la flecha derecha
         prevEl: '.swiper-button-prev', // Selector de la flecha izquierda
     },
+
+        // Configuración según el tamaño de pantalla
+    breakpoints: {
+        // 📱 Móviles
+        0: {
+            allowTouchMove: true,
+            autoplay: false, // sin auto-slide
+        },
+        // 💻 Desktop
+        641: {
+            allowTouchMove: false,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+        }
+    }
+    
 });
