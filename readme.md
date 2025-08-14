@@ -15,7 +15,7 @@ Incluye una sección de inicio, un carrusel interactivo con proyectos destacados
 
 ## 🚀 Sitio desplegado
 Puedes visitar mi portafolio aquí:  
-🔗 [https://facuuurz.github.io/](https://facuuurz.github.io/Portafolio-Facundo-Ramirez) *(reemplazar por tu enlace real de GitHub Pages)*
+🔗 [Portafolio Facundo Ramirez](https://facuuurz.github.io/Portafolio-Facundo-Ramirez)
 
 ## 📂 Estructura del proyecto
 ```plaintext
@@ -45,3 +45,4 @@ index.html
 
 ---
 © 2025 Facundo Ramirez. Todos los derechos reservados.
+
