@@ -438,9 +438,6 @@
   .bg-\[\#262626\] {
     background-color: #262626;
   }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
-  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -688,6 +685,11 @@
       --tw-scale-y: 95%;
       --tw-scale-z: 95%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+  .max-sm\:mt-6 {
+    @media (width < 40rem) {
+      margin-top: calc(var(--spacing) * 6);
     }
   }
   .max-sm\:block {
