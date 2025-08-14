@@ -9,6 +9,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-orange-400: oklch(75% 0.183 55.934);
+    --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-pink-500: oklch(65.6% 0.241 354.308);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
@@ -752,6 +753,11 @@
       border-width: 2px;
     }
   }
+  .max-sm\:bg-blue-600 {
+    @media (width < 40rem) {
+      background-color: var(--color-blue-600);
+    }
+  }
   .max-sm\:px-0 {
     @media (width < 40rem) {
       padding-inline: calc(var(--spacing) * 0);
@@ -760,6 +766,11 @@
   .max-sm\:py-8 {
     @media (width < 40rem) {
       padding-block: calc(var(--spacing) * 8);
+    }
+  }
+  .max-sm\:pt-28 {
+    @media (width < 40rem) {
+      padding-top: calc(var(--spacing) * 28);
     }
   }
   .max-sm\:text-2xl {
