@@ -773,6 +773,11 @@
       padding-block: calc(var(--spacing) * 8);
     }
   }
+  .max-sm\:pt-20 {
+    @media (width < 40rem) {
+      padding-top: calc(var(--spacing) * 20);
+    }
+  }
   .max-sm\:pt-24 {
     @media (width < 40rem) {
       padding-top: calc(var(--spacing) * 24);
