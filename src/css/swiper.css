@@ -77,12 +77,12 @@ background: linear-gradient(10deg, rgba(0, 0, 0, 0.78) 17%, rgba(255, 255, 255, 
     .swiper{
         display: flex;
         align-items: center;
-        height: calc(100vh - 15rem);
+        min-height: calc(100vh - 15rem);
     }
 
     .swiper-wrapper{
         width: 22rem;
-        height: 29rem;
+        height: 30rem;
     }
 
     .swiper-slide{
@@ -99,7 +99,6 @@ background: linear-gradient(10deg, rgba(0, 0, 0, 0.78) 17%, rgba(255, 255, 255, 
     .swiper-pagination{
         display: inline-block;
         position: absolute;
-        padding-top: 1rem;
     }
 
     .swiper::before,
