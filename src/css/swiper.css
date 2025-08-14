@@ -77,8 +77,7 @@ background: linear-gradient(10deg, rgba(0, 0, 0, 0.78) 17%, rgba(255, 255, 255, 
     .swiper{
         display: flex;
         align-items: center;
-        background-color: #ff6a00;
-        height: calc(100vh - 11rem);
+        height: calc(100vh - 10rem);
     }
 
     .swiper-wrapper{
