@@ -219,32 +219,71 @@
                     </div>
 
                     
-                    <form action="https://formspree.io/f/tu-endpoint" method="POST" class="w-full max-w-lg bg-[#1a1a1a] p-6 rounded-xl shadow-lg">
+                    <form
+                    id="contact-form"
+                    action="https://formspree.io/f/xnnbznpn"
+                    method="POST"
+                    class="w-full max-w-lg bg-[#1a1a1a] p-6 rounded-xl shadow-lg"
+                    >
                         <h5 class="text-xl font-semibold text-white mb-4">Envíame un mensaje</h5>
+
+                        <!-- Honeypot (anti-spam) -->
+                        <input
+                            type="text"
+                            name="company"
+                            class="hidden"
+                            tabindex="-1"
+                            autocomplete="off"
+                            aria-hidden="true"
+                        />
+
+                        <!-- Opcional: definir asunto por defecto en Formspree -->
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde el Portafolio F.R" />
 
                         <div class="mb-4">
                             <label for="name" class="block text-gray-300 mb-1">Nombre</label>
-                            <input type="text" id="name" name="name" required
-                                class="w-full p-3 rounded-lg bg-[#262626] text-white border border-gray-600 focus:outline-none focus:border-pink-500">
+                            <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            class="w-full p-3 rounded-lg bg-[#262626] text-white border border-gray-600 focus:outline-none focus:border-pink-500"
+                            />
                         </div>
 
                         <div class="mb-4">
                             <label for="email" class="block text-gray-300 mb-1">Correo electrónico</label>
-                            <input type="email" id="email" name="email" required
-                                class="w-full p-3 rounded-lg bg-[#262626] text-white border border-gray-600 focus:outline-none focus:border-pink-500">
+                            <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            class="w-full p-3 rounded-lg bg-[#262626] text-white border border-gray-600 focus:outline-none focus:border-pink-500"
+                            />
                         </div>
 
                         <div class="mb-4">
                             <label for="message" class="block text-gray-300 mb-1">Mensaje</label>
-                            <textarea id="message" name="message" rows="4" required
-                                class="w-full p-3 rounded-lg bg-[#262626] text-white border border-gray-600 focus:outline-none focus:border-pink-500"></textarea>
+                            <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            required
+                            class="w-full p-3 rounded-lg bg-[#262626] text-white border border-gray-600 focus:outline-none focus:border-pink-500"
+                            ></textarea>
                         </div>
 
-                        <button type="submit"
+                        <!-- Estado del formulario -->
+                        <p id="form-status" class="text-sm min-h-5"></p>
+
+                        <button
+                            id="form-submit"
+                            type="submit"
                             class="w-full py-3 text-center rounded-full text-white font-medium 
-                            bg-[linear-gradient(135deg,#000000_0%,#6a11cb_1%,#ff00a6_50%,#ff6a00_100%)] 
-                            [background-size:200%_auto] transition-all duration-500 ease-in-out 
-                            hover:[background-position:right_center] transform hover:scale-105 active:scale-95 hover:cursor-pointer">
+                                bg-[linear-gradient(135deg,#000000_0%,#6a11cb_1%,#ff00a6_50%,#ff6a00_100%)]
+                                [background-size:200%_auto] transition-all duration-500 ease-in-out 
+                                hover:[background-position:right_center] transform hover:scale-105 active:scale-95 hover:cursor-pointer"
+                        >
                             Enviar
                         </button>
                     </form>
@@ -259,6 +298,7 @@
         </p>
     </footer>
 
+    <script src="src/scripts/contact-form.js" defer></script>
     <script src="src/scripts/menu-haburguesa.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="src/scripts/swiper.js"></script>
